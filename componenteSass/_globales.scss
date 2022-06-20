@@ -1,0 +1,43 @@
+// 1. Posicionamiento
+// 2. Modelo caja(Box model)
+// 3. Tipografia
+// 4. Visuales
+// 5. Otros
+
+//Variables
+//Fuentes
+$fuente-principal: monospace;
+//Colores
+$rojo-fuerte: #a60311;
+$rojo-claro: #a63841;
+$vinotinto: #400610;
+$azul-blanco: #9fa7bf;
+$blanco: #f2f2f2;
+$negro: #0d0d0d;
+$violeta-claro: #24253c;
+
+@function calculateRem($size){
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+	line-height: calculateRem($size)*1.5;	
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $fuente-principal;
+}
+
+a {
+	text-decoration: none;
+}
