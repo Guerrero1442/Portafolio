@@ -17,7 +17,7 @@ a {
 
 .header {
   height: 400px;
-  max-width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,9 +299,6 @@ a {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-}
-.main__Aboutme .card__services > p {
-  text-align: center;
 }
 .main__Aboutme img {
   width: 90%;
