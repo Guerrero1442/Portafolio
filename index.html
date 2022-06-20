@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/4ef6e52899.js" crossorigin="anonymous"></script>
+	<title>portafolio</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="header__nav nav">
+			<button class="header__menu"><i class="fa-solid fa-bars"></i></button>
+			<ul class="nav-menu">
+				<li><a href="#aboutme">Home</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#project">Proyectos</a></li>
+			</ul>
+		</nav>
+		<div class="header__content">
+			<h3 class="header__content--hi">Hello</h3>
+			<h2 class="header__content--emphasis">I am Designer</h2>
+			<p class="header__content--proffesion">Web developer</p>
+			<button class="header__content--btn">Camilo Arias</button>
+		</div>
+		<div class="header__socialMedia">
+			<ul>
+				<li><a href="https://github.com/Guerrero1442" target="_blank"><i
+							class="fa-brands fa-github"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/camilo-arias-18035a199/" target="_blank"><i
+							class="fa-brands fa-linkedin"></i></a></li>
+				<li><a href="https://twitter.com/guerrero1_arias" target="_blank"><i
+							class="fa-brands fa-twitter"></i></a></li>
+			</ul>
+		</div>
+	</header>
+	<main class="main">
+		<section class="main__Aboutme">
+
+			<img src="./img/persona_prueba.jpg" alt="">
+			<div class="main__Aboutme--content">
+				<a name="aboutme" id="aboutme"></a>
+				<h1>About me</h1>
+				<p>My name is Camilo I am 21 years old I am in the penultimate semester of Systems
+					Engineering and about to start a double degree in Data Science I like video
+					games, photography, music and I love the challenges that force me to be better,
+					I have a year implementing Web development tools mostly Frontend development as
+					Sass Angular Bootstrap among others.</p>
+
+				<div class="main__Aboutme--content_dataMe">
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>:</th>
+							<td>Camilo Arias</td>
+						</tr>
+						<tr>
+							<th>Phone</th>
+							<th>:</th>
+							<td>3174809715</td>
+						</tr>
+						<tr>
+							<th>Email</th>
+							<th>:</th>
+							<td>camiloalex2000@gmail.com</td>
+						</tr>
+						<tr>
+							<th>Age</th>
+							<th>:</th>
+							<td>21</td>
+						</tr>
+						<tr>
+							<th>University</th>
+							<th>:</th>
+							<td>Poitecnico Grancolombiano</td>
+						</tr>
+						<tr>
+							<th>City</th>
+							<th>:</th>
+							<td>Bogota</td>
+						</tr>
+					</table>
+				</div>
+				<a type="button" href="./Docs/Curriculum Desarrollador web.pdf" download="Curriculum"
+					class="main__Aboutme--btn_CV">Download CV</a>
+			</div>
+		</section>
+		<section class="main__services">
+			<a name="services" id="services"></a>
+			<h1 class="main__services--title">
+				My Services
+			</h1>
+			<div class="main__services--cards">
+				<div class="card__services">
+					<span class="material-symbols-outlined card__services--logo">
+						code
+					</span>
+					<h2 class="card__services--title">Web Development</h2>
+					<p class="card__services--subtitle">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Tempora odit earum
+						unde omnis. Sint, doloribus. Optio, quos expedita. Animi, impedit.</p>
+				</div>
+				<div class="card__services">
+					<span class="material-symbols-outlined card__services--logo">
+						brush
+					</span>
+					<h2 class="card__services--title">Web Desing</h2>
+					<p class="card__services--subtitle">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Tempora odit earum
+						unde omnis. Sint, doloribus. Optio, quos expedita. Animi, impedit.</p>
+				</div>
+				<div class="card__services">
+					<span class="material-symbols-outlined card__services--logo">
+						query_stats
+					</span>
+					<h2 class="card__services--title">Data Analist</h2>
+					<p class="card__services--subtitle">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Tempora odit earum
+						unde omnis. Sint, doloribus. Optio, quos expedita. Animi, impedit.</p>
+				</div>
+			</div>
+		</section>
+		<section class="main__myWorks">
+			<a name="project" id="project"></a>
+			<h1 class="main__myWorks--title">
+				My Works
+			</h1>
+			<div class="main__myWorks--cards">
+				<div class="card">
+					<a href="https://github.com/Guerrero1442/Frontend">
+						<div class="card__content">
+							<span class="material-symbols-outlined card__logo">
+								school
+							</span>
+							<h1 class="card__title">Plataforma de estudio</h1>
+							<p class="card__resumen">Aplicacion para crear preguntas y
+								examenes
+								ademas de guardarlas y realizar mas acciones como
+								eliminar
+								editar y presentar</p>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<div class="card__content">
+						<span class="material-symbols-outlined card__logo">
+							price_change
+						</span>
+						<h1 class="card__title">Crear facturas</h1>
+						<p class="card__resumen">App que permite a los usuarios crear facturas
+							agregando o eliminando items, Calculando el total.</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__content">
+						<span class="material-symbols-outlined card__logo">
+							web
+						</span>
+						<h1 class="card__title">Clon landing page Netflix</h1>
+						<p class="card__resumen">Con el preprocesador de Sass y los
+							conocimientos de Grid y Flexbox se creo este clon de la landing
+							page de netflix</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__content">
+						<span class="material-symbols-outlined card__logo">
+							view_kanban
+						</span>
+						<h1 class="card__title">Clon landing page Google</h1>
+						<p class="card__resumen">Con el preprocesador de Sass y los
+							conocimientos de Grid y Flexbox se creo este clon de la landing
+							page de netflix</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__content">
+						<span class="material-symbols-outlined card__logo">
+							sports_esports
+						</span>
+						<h1 class="card__title">Pagina informativa LOL</h1>
+						<p class="card__resumen">Pagina WEB que consume una API sobre el
+							videojuego mas famoso del mundo, con esta se da una introduccion
+							sobre el videojuego</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__content">
+						<span class="material-symbols-outlined card__logo">
+							calculate
+						</span>
+						<h1 class="card__title">Calculadora</h1>
+						<p class="card__resumen">Una calculadora con las opciones que cualquiera
+							deberia tener, utilizando angular.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="contact">
+		<a name="contact" id="contact"></a>
+		<h1 class="contact__title">
+			Contact me
+		</h1>
+		<div class="header__socialMedia contact">
+			<ul>
+				<li><a href="https://github.com/Guerrero1442" target="_blank"><i
+							class="fa-brands fa-github"></i></a>
+				</li>
+				<li><a href="https://www.linkedin.com/in/camilo-arias-18035a199/" target="_blank"><i
+							class="fa-brands fa-linkedin"></i></a></li>
+				<li><a href="https://twitter.com/guerrero1_arias" target="_blank"><i
+							class="fa-brands fa-twitter"></i></a></li>
+			</ul>
+		</div>
+		<form action="https://formsubmit.co/camiloalex2000@gmail.com" method="POST" class="contactMe">
+			<div class="contactMe__userDescription">
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Email Address">
+			</div>
+			<textarea class="contactMe__message" name="textarea" rows="10" cols="50"
+				placeholder="Leave your message..."></textarea>
+			<button type="submit" class="contactMe__submit">Send it Now</button>
+		</form>
+		<div class="contactMe__Data">
+			<div class="icon-left"><span class="material-symbols-outlined icon__communication">
+					mail
+				</span>
+				<h4>camiloalex2000@gmail.com</h4>
+			</div>
+			<div class="icon-right">
+				<span class="material-symbols-outlined icon__communication">
+					call
+				</span>
+				<h4>
+					3174809715
+				</h4>
+			</div>
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/4ef6e52899.js" crossorigin="anonymous"></script>
+	<script src="./js/index.js"></script>
+</body>
+</html>

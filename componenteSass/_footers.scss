@@ -1,0 +1,102 @@
+.contact {
+	width: 100%; 
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #1f2233;
+	> {
+		margin: 60px 0;
+	}
+	&__title {
+		@include font-size(30px);
+		margin-top: 1.2em;
+		color: $rojo-claro;
+	}
+	.contact {
+		margin: 5em 0;
+		i {
+			color: $rojo-claro;
+		}
+		i:hover {
+			color: $rojo-fuerte;
+		}
+	}
+	.contactMe {
+		width: 50%;
+		height: auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		@include media(mobile-only){
+			width: 80%;
+		}
+		&__userDescription {
+			width: 100%;
+			display: flex;
+			input {
+				width: 50%;
+				margin: 5px;
+				padding: 7px 4px;
+				font-weight: bold;
+				background-color: $azul-blanco;
+				color: $vinotinto;
+				opacity: 0.3;
+				border: none;
+			}
+		}
+
+		&__message {
+			width: 99%;
+			height: 150px;
+			margin: 5px;
+			font-weight: bold;
+			background-color: $azul-blanco;
+			opacity: 0.3;
+			border: none;
+		}
+		&__submit {
+			width: 99%;
+			margin: 5px;
+			padding: 10px 2px;
+			font-weight: 600;
+			color: $blanco;
+			background-color: $rojo-claro;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		&__submit:hover {
+			background-color: $rojo-fuerte;
+		}
+	}
+	.contactMe__Data {
+		width: 60%;
+		margin: 5em 0;
+		display: flex;
+		justify-content: space-around;
+		height: auto;
+		margin-top: 40px 0;
+		@include media(mobile-only){
+			width: 90%;
+		}
+		> div {
+			text-align: center;
+			h4 {
+				@include font-size(20px);
+				color: $rojo-claro;
+				@include media(mobile-only){
+					@include font-size(15px)
+				}
+			}
+		}
+		.icon__communication{
+			@include font-size(80px);
+			color: $rojo-claro;
+			@include media(mobile-only){
+				@include font-size(45px)
+			}
+		}
+	}
+}

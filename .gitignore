@@ -1,0 +1,5 @@
+# Ignorar todas las imagenes
+*.png
+*.jpg
+# Ignorar la carpeta documentos
+Docs

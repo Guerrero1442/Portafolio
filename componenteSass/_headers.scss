@@ -1,0 +1,155 @@
+.header {
+	height: 400px;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-image: url(./img/paisaje_header.jpg);
+	background-repeat: no-repeat;
+	&__nav {
+		margin: 8px 0;
+		@include media(mobile-only){
+			margin: 0 20px;
+			align-self: flex-end;
+		}
+		@include media(tablet-l-only){
+			margin: 0 20px;
+			align-self: flex-end;
+		}
+		.header__menu {
+			display: none; 
+			background-color: transparent;
+			border: none;
+			color: $blanco;
+			@include font-size(35px); 
+			@include media(mobile-only){
+				display: block;
+			}
+			@include media(tablet-l-only){
+				display: block;
+			}
+		}
+	}
+
+	.nav {
+		ul {
+			display: flex;
+			list-style: none;
+			@include media(mobile-only){
+				display: flex;
+				justify-content: space-around;
+				width: 100%;
+				height: 30%;
+				position: fixed;
+				right: 0;
+				flex-direction: column;
+				align-items: center;
+				top: 60px;
+				margin-right: 20px;
+				background-color: transparent;
+				left: 100%;
+				margin: 0;
+				transition: left .3s;
+			}
+			@include media(tablet-l-only){
+				display: flex;
+				justify-content: space-around;
+				width: 100%;
+				height: 30%;
+				position: fixed;
+				right: 0;
+				flex-direction: column;
+				align-items: center;
+				top: 60px;
+				margin-right: 20px;
+				background-color: transparent;
+				left: 100%;
+				margin: 0;
+				transition: left .3s;
+			}
+			li {
+				margin: 0 20px;
+				a {
+					position: relative;
+					@include font-size(16px);
+					text-decoration: none;
+					color: $blanco;
+				}
+				a::before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-image: linear-gradient(to right top, #400610, #590414, #730216, #8c0015, #a60311);	z-index: 1;
+					transform: scaleX(0);
+					transform-origin: left;
+					transition: transform 0.5s ease-in-out;
+				}
+
+				a:hover::before {
+					transform: scaleX(1);
+				}
+			}
+		}
+		.nav-menu--visible{
+			left: 40% !important;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&--hi {
+			@include font-size(40px);
+			color: $blanco;
+		}
+		&--emphasis {
+			@include font-size(20px);
+			color: $blanco;
+		}
+		&--proffesion {
+			@include font-size(16px);
+			color: $blanco;
+		}
+		&--btn {
+			margin: 10px 2px;
+			padding: 10px 30px;
+			font-weight: bold;
+			@include font-size(18px);
+			font-family: monospace;
+			background-color: $blanco;
+			border-radius: 28px;
+			border: none;
+			cursor: pointer;
+		}
+		&--btn:hover {
+			color: $blanco;
+			background-color: $vinotinto;
+		}
+	}
+	&__socialMedia {
+		margin: 8px 0;
+		ul {
+			display: flex;
+			list-style: none;
+			li {
+				margin: 0 20px;
+				a {
+					position: relative;
+					@include font-size(16px);					text-decoration: none;
+					color: $blanco;
+					i {
+						@include font-size(20px);
+					}
+					i:hover {
+						color: $vinotinto;
+					}
+				}
+			}
+		}
+	}
+}
