@@ -3,3 +3,5 @@
 *.jpg
 # Ignorar la carpeta documentos
 Docs
+# Ignorar carpeta node_modules
+node_modules
